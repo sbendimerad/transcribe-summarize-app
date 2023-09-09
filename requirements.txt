@@ -1,0 +1,4 @@
+pydub
+whisper
+openai
+streamlit
