@@ -1,4 +1,5 @@
 import openai
+import configparser
 
 
 
@@ -11,10 +12,14 @@ def summarize_text_with_chatgpt(input_text, model="gpt-3.5-turbo"):
         model (str): OpenAI GPT model to use (default is "gpt-3.5-turbo").
 
     Returns:
-        str: Summarized text.
-    """
+        str: Summarized text."""
 
-    openai.api_key = "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"
+    config.read('config.ini')
+    chatgpt_api_key = config.get('API', 'chatgpt_api_key')
+
+    # Set the API key
+    openai.api_key = chatgpt_api_key
+
 
     # Create a clear and detailed prompt
     prompt = f"Summarize the following text as if it's a course: {input_text}"
@@ -41,3 +46,4 @@ def summarize_text_with_chatgpt(input_text, model="gpt-3.5-turbo"):
     )
 
     return response.choices[0].message["content"]
+
