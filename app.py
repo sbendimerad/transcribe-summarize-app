@@ -1,6 +1,8 @@
 import streamlit as st
 from audio_utils import convert_to_mp3, transcribe_audio
 from summarization_utils import summarize_text_with_chatgpt
+import ffmpeg
+
 
 def main():
     st.title("Audio Transcription and Summarization App")
