@@ -13,7 +13,10 @@ def summarize_text_with_chatgpt(input_text, model="gpt-3.5-turbo"):
 
     Returns:
         str: Summarized text."""
+    
 
+    # Initialize the configuration parser
+    config = configparser.ConfigParser()
     config.read('config.ini')
     chatgpt_api_key = config.get('API', 'chatgpt_api_key')
 
