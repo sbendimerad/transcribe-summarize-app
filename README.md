@@ -33,4 +33,8 @@ To use the app, follow these steps:
    streamlit run app.py
    ```
 
+## Documentation
+
+You can access the full documentation for this project on [GitHub Pages](https://sbendimerad.github.io/transcribe-summarize-app/).
+
 
