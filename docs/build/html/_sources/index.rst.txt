@@ -46,6 +46,17 @@ In the project repository, you'll find the following directories:
 
    2. **streamlit_in_colab.ipynb**: This notebook demonstrates how to run the "transcribe_summarize" Streamlit app within Google Colab, enabling you to use the app's features in a cloud-based environment.
 
+- **docs**: This directory contains everything related to documentation using Sphinx
+
+- **.streamlit**: This directory contains the specific configurations for Streamlit
+
+- **app.py**: This file contains the Streamlit code and the main function that launches the summarization_utils and audio_utils
+
+- **Others files**: 
+   * packages.txt is necessary if you want to deploy on streamlit.io, 
+   * config.ini contains the API key, 
+   * .nojekyll is necessary to deploy the documentation
+
 Installation
 ------------
 
