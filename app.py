@@ -23,8 +23,6 @@ def main():
         summarized_text = summarize_text_with_chatgpt(transcribed_text)
 
     # Display results
-    st.write("Transcribed Text:")
-    st.write(transcribed_text)
     st.write("Summarized Text:")
     st.write(summarized_text)
 
